@@ -1,4 +1,14 @@
-﻿
+﻿List<Vehicle> vehicles = new List<Vehicle>()
+{
+    new Car(),
+    new Bicycle(),
+    new Airplane()
+};
+foreach (var vehicle in vehicles)
+{
+    vehicle.Move();
+}
+
 public abstract class Vehicle
 {
     public string Brand;
