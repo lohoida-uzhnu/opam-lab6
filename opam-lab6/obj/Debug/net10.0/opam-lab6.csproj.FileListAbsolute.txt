@@ -1,0 +1,14 @@
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\bin\Debug\net10.0\opam-lab6.exe
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\bin\Debug\net10.0\opam-lab6.deps.json
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\bin\Debug\net10.0\opam-lab6.runtimeconfig.json
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\bin\Debug\net10.0\opam-lab6.dll
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\bin\Debug\net10.0\opam-lab6.pdb
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.GeneratedMSBuildEditorConfig.editorconfig
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.AssemblyInfoInputs.cache
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.AssemblyInfo.cs
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.csproj.CoreCompileInputs.cache
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.dll
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\refint\opam-lab6.dll
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.pdb
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\opam-lab6.genruntimeconfig.cache
+S:\RIDER\RiderProjects\opam-lab6\opam-lab6\obj\Debug\net10.0\ref\opam-lab6.dll
