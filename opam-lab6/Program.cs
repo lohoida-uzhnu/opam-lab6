@@ -1,62 +1,57 @@
-﻿List<Vehicle> vehicles = new List<Vehicle>()
+﻿List<Applience> appliences = new List<Applience>()
 {
-    new Car(),
-    new Bicycle(),
-    new Airplane()
+    new Fridge(),
+    new WashingMachine(),
+    new Microwave()
 };
-foreach (var vehicle in vehicles)
+foreach (var applience in appliences)
 {
-    vehicle.Move();
+    applience.Work();
     
-    if (vehicle is IRefulable refulable)
+    if (applience is IWashingPowder powder)
     {
-        refulable.Refill();
+        powder.PourPowder();
     }
 }
 
-public interface IRefulable
+public interface IWashingPowder
 { 
-    void Refill();
+    void PourPowder();
 }
 
-public abstract class Vehicle
+public abstract class Applience
 {
     public string Brand;
-    public double Speed;
-    public abstract void Move();
+    public double Power;
+    public abstract void Work();
 }
 
 
-public class Car : Vehicle, IRefulable
+public class Fridge : Applience
 {
-    public void Refill()
+    public override void Work()
     {
-        Console.WriteLine("Машина заправлена!");
-    }
-
-    public override void Move()
-    {
-        Console.WriteLine("Машина їде!");
+        Console.WriteLine("Холодильник працює!");
     }
 }
 
-public class Bicycle : Vehicle
+public class WashingMachine : Applience, IWashingPowder
 {
-    public override void Move()
+    public void PourPowder()
     {
-        Console.WriteLine("Велосипед їде!");
+        Console.WriteLine("Пральний порошок засипаний!");
+    }
+
+    public override void Work()
+    {
+        Console.WriteLine("Пральна машина працює!");
     }
 }
 
-public class Airplane : Vehicle, IRefulable
+public class Microwave : Applience
 {
-    public void Refill()
+    public override void Work()
     {
-        Console.WriteLine("Літак заправлений!");
-    }
-
-    public override void Move()
-    {
-        Console.WriteLine("Літак летить!");
+        Console.WriteLine("Мікрохвильовка працює!");
     }
 }
