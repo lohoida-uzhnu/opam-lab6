@@ -7,18 +7,33 @@
 foreach (var vehicle in vehicles)
 {
     vehicle.Move();
+    
+    if (vehicle is IRefulable refulable)
+    {
+        refulable.Refill();
+    }
+}
+
+public interface IRefulable
+{ 
+    void Refill();
 }
 
 public abstract class Vehicle
 {
     public string Brand;
-    public double speed;
+    public double Speed;
     public abstract void Move();
 }
 
 
-public class Car : Vehicle
+public class Car : Vehicle, IRefulable
 {
+    public void Refill()
+    {
+        Console.WriteLine("Машина заправлена!");
+    }
+
     public override void Move()
     {
         Console.WriteLine("Машина їде!");
@@ -33,8 +48,13 @@ public class Bicycle : Vehicle
     }
 }
 
-public class Airplane : Vehicle
+public class Airplane : Vehicle, IRefulable
 {
+    public void Refill()
+    {
+        Console.WriteLine("Літак заправлений!");
+    }
+
     public override void Move()
     {
         Console.WriteLine("Літак летить!");
